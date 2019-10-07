@@ -191,24 +191,23 @@ p {
 	padding: 20px;
 }
 
+
+#seventh table tr, #seventh th { /*Styling av rammen rundt elementene i tabellen*/
+	border: 1px solid black;
+	padding: 40px 20px;
+	font-weight: 200;
+}
+
+#seventh table tr:first-child th { /*Styling av overskriftene i tabellen*/
+	font-weight: bold;
+	
+}
+
+
 #eighth { /*Styling av åttende bolk/avsnitt med informasjon*/
 	background-color: none;
 	grid-row: 8;
 	grid-column: 2 / -1;
 	padding: 20px;
 }
-
-#eighth table tr, #eighth th { /*Styling av rammen rundt elementene i tabellen*/
-	border: 1px solid black;
-	padding: 40px 20px;
-	font-weight: 200;
-}
-
-#eighth table tr:first-child th { /*Styling av overskriftene i tabellen*/
-	font-weight: bold;
-	
-}
-
-
-
 
