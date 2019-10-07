@@ -107,6 +107,10 @@ main { /*Styling av hovedinnholdet på siden*/
 	
 }
 
+p {
+	line-height: 24px;
+}
+
 #first { /*Styling av første bolk/avsnitt med informasjon*/
 	background-color: none;	
 	grid-row: 1;
