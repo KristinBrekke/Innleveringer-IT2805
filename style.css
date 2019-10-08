@@ -91,7 +91,7 @@ header p {
 
 body {
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	background-color:rgba(213,213,209,1.00);
+	background-color:rgba(232,232,230,1.00);
 	font-size: 18px;
 	padding: 0;
 	margin: 0;
@@ -175,6 +175,8 @@ p {
 	grid-row: 2;
 	
 }
+#fifth img{ 
+margin-left: 40px}
 
 #sixt { /*Styling av sjette bolk/avsnitt med informasjon*/
 	background-color: none;
