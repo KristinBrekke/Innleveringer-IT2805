@@ -180,8 +180,8 @@ img {
 	grid-row: 2;
 	
 }
-/*#fifth img{ 
-margin-left: 40px;}*/
+#fifth img{ 
+margin-left: 40px;}
 
 #sixt { /*Styling av sjette bolk/avsnitt med informasjon*/
 	background-color: none;
