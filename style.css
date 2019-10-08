@@ -95,12 +95,13 @@ body {
 	font-size: 18px;
 	padding: 0;
 	margin: 0;
+	width: 100vw;
 }
 
 main { /*Styling av hovedinnholdet på siden*/
 	/*border: dashed;*/
 	margin: auto;
-	width: 75%;
+	width: 75vw;
 	display: grid;
 	grid-template-columns: 33.3% auto 33.3%;
 	grid-template-rows: auto auto auto auto auto auto auto auto;
@@ -109,6 +110,10 @@ main { /*Styling av hovedinnholdet på siden*/
 
 p {
 	line-height: 24px;
+}
+
+img {
+	width: 40vw;
 }
 
 #first { /*Styling av første bolk/avsnitt med informasjon*/
@@ -175,8 +180,8 @@ p {
 	grid-row: 2;
 	
 }
-#fifth img{ 
-margin-left: 40px}
+/*#fifth img{ 
+margin-left: 40px;}*/
 
 #sixt { /*Styling av sjette bolk/avsnitt med informasjon*/
 	background-color: none;
