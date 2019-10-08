@@ -111,6 +111,10 @@ p {
 	line-height: 24px;
 }
 
+img {
+	width: 400px;
+}
+
 #first { /*Styling av første bolk/avsnitt med informasjon*/
 	background-color: none;	
 	grid-row: 1;
