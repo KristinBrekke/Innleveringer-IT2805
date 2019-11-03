@@ -70,6 +70,26 @@ header {
 
 /*Navigation bar styling END*/
 
+body {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	background-color:rgba(232,232,230,1.00);
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+	width: 100%
+}
+
+main { /*Styling av hovedinnholdet på siden*/
+	/*border: dashed;*/
+	margin: auto;
+	width: 75%;
+	display: grid;
+	grid-template-columns: 33.3% auto 33.3%;
+	grid-template-rows: auto auto auto auto auto auto auto auto;
+	
+}
+
+
 header h1 {
 	margin: 50px auto auto 50px;
 	color: white;
@@ -89,26 +109,14 @@ header p {
 	color: white;
 }
 
-body {
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	background-color:rgba(213,213,209,1.00);
-	font-size: 18px;
-	padding: 0;
-	margin: 0;
-}
 
-main { /*Styling av hovedinnholdet på siden*/
-	/*border: dashed;*/
-	margin: auto;
-	width: 75%;
-	display: grid;
-	grid-template-columns: 33.3% auto 33.3%;
-	grid-template-rows: auto auto auto auto auto auto auto auto;
-	
-}
 
 p {
 	line-height: 24px;
+}
+
+img {
+	width: 600px;
 }
 
 #first { /*Styling av første bolk/avsnitt med informasjon*/
@@ -175,6 +183,8 @@ p {
 	grid-row: 2;
 	
 }
+#fifth img{ 
+margin-left: 40px}
 
 #sixt { /*Styling av sjette bolk/avsnitt med informasjon*/
 	background-color: none;
