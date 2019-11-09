@@ -46,7 +46,11 @@
             <h3>Forsiden</h3>
             <p>På forsiden har vi gjort flere endringer på designet. Vi har gjort om rekkefølgen på de ulike elementene. Avsnittet "Om Portobok" står nå øverst, siden vi ville få fram hensikten med siden med en gang brukeren gikk inn på det. Bildekarusellen er fortsatt plassert midt på siden, men har fått en hvit ramme rundt seg. Det er fordi vi ville bryte opp forsiden mer, og at bildene kom bedre fram med hvit bakgrunn enn med grønn. Nederst på forsiden er designerne plassert. Tanken bak det er at etter at brukeren har sett på prosjektene i bildekarusellen er det lettere å vite hvilken designer personen vill inn på. Dersom personen visste det i det den gikk inn på siden, ville den klikket seg direkte inn på designers i navbaren med en gang.<br><br>
 			
-			Bildekarusellen går både av seg selv slik at den bytter mellom prosjekter hvert fjerde sekund, det er også mulig å klikke "neste" og "forrige" og å velge hvilket prosjekt man vil se på ved å klikke på de ti kvadratene under karusellen. Til hvert bilde kan man se navnet på prosjektet og hvem designeren bak er. Klikker man på bildet kommer man direkte inn på siden til det prosjektet. Derfra kan man igjen nå designeren av prosjektet ved å klikke på ikonet av designeren øverst på siden. 
+			Bildekarusellen går både av seg selv slik at den bytter mellom prosjekter hvert fjerde sekund, det er også mulig å klikke "neste" og "forrige" og å velge hvilket prosjekt man vil se på ved å klikke på de ti kvadratene under karusellen. Til hvert bilde kan man se navnet på prosjektet og hvem designeren bak er. Klikker man på bildet kommer man direkte inn på siden til det prosjektet. Derfra kan man igjen nå designeren av prosjektet ved å klikke på ikonet av designeren øverst på siden. <br><br>
+				
+			Ikonene som nå ligger neders på siden er beholdt fra P2. Men de har fått en skygge når en hover over de slik at brukeren skal føle at dette er noe man kan klikke på. Når man klikker på ikonene vil de  hoppe opp en pixel slik at brukeren får en positiv  feedback. Vi vurderte å gjøre ikonene modulære med javascript slik som vi har gjort med bildekarusellen og på de andre sidene som projects.html og designers.html. Men vi konkluderte med at dette ikke var nødvendig for disse ikonene fordi det kun var 5 og vi følte at vi hadde vist det godt nok med de andre kodene.
+			
+			
 			</p>
             
             <h3>Designere</h3>
@@ -69,7 +73,10 @@
         <div id="third">
             <h2>JavaScript fordeling og forandringer</h2>
             <h3>navbar.js</h3>
-            <p>Solveig har brukt javaScript til å lage navigasjonsbaren med hamburgermeny.</p>
+            <p>Solveig har brukt javaScript til å lage navigasjonsbaren med hamburgermeny. Navbaren er laget likt som planen, med tre linker og en logo i toppen. Vi fant ut at det var best å implementere navbaren i alle html-sidene ved å legge til html-koden i navbar-js, for så å bruke innerHTML til å legge den i body-elementet. Denne skal egentlig ligge i headern, men vi flyttet den ut i bodyelementet, slik at position: sticky skulle fungere i hele bodien. Vi har også brukt javascript til å legge  en understrek under den siden du er på i navbaren for å tydeliggjøre dette. Tanken var å gjøre dette med CSS, men vi fant fort ut å kode siden at dette ville fungere best med javascript. Denne koden heter function firkant(). Når du hover over denne streken vil den bli grønn. <br><br>
+			
+			Vi ønsket å lage en hamburgermeny når koden blir mindre slik at nettsiden vår skulle være lett å bruke på både nettbrett, mobil og data. Hamburgermenyen krevde langt mer tid i javascript enn planlagt. Koden er laget helt  uten å bruke andre javascriptkoder på nettet. Dermed endte jeg opp med å bruke to funksjoner for å gjøre navbaren til en hamburgermeny. Disse funkjsonene heter function hamburger() og function resize(). 
+			</p>
             
             <h3>slideshow.js</h3>
             <p>Dina har laget javascriptet slideshow.js for slideshowet på hjemmesiden. Der er det sørget for modularitet ved at bildene ikke er skrevet inn én og én i html-en, men hentet ut ved bruk av en array i javascript. Det er gjort for at det skal være lettere for Bernt Måsøy å fjerne prosjekter og bytte de ut med andre, da det ikke er nødvendig å vise alle prosjekter i bildekarusellen, men heller de mest aktuelle. Vi er klare over at de aller færreste brukere av Portobok vil se gjennom hele bildekarusellen, det er mer sannsynlig at man klikker seg inn på "prosjekter" i navbaren, da får man en bedre oversikt enn man gjør i en bildekaruell. Vi valgte alikevel å ha 10 prosjekter i bildekaruellen i denne omgang, og så kan Bernt heller fjerne noen om han synes 10 er for mange. Grunnen for valget av 10 er at det er lite sannsynlig at Bernt vil ha flere, og det er lettere for han å fjerne enn å legge til da han har lite erfaring med webutvikling.</p>
