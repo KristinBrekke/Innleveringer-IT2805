@@ -46,43 +46,52 @@
             Font-størrelsen er endret til henholdsvis 40px og 20px fra opprinnelige 40pt og 20pt
             Vi har gjort mange forandringer på de ulike sidene våre. De er ramset opp under. </p><br> 
             
-            <h3>Forandringer på forsiden</h3>
-            <p>På forsiden har vi gjort flere endringer på designet. Vi har gjort om rekkefølgen på de ulike elementene. Avsnittet "Om Portobok" står nå øverst, siden vi ville få fram hensikten med siden med en gang brukeren gikk inn på det. Bildekarusellen er fortsatt plassert midt på siden, men har fått en hvit ramme rundt seg. Det er fordi vi ville bryte opp forsiden mer, og at bildene kom bedre fram med hvit bakgrunn enn med grønn. Nederst på forsiden er designerne plassert. Tanken bak det er at etter at brukeren har sett på prosjektene i bildekarusellen er det lettere å vite hvilken designer personen vill inn på. Dersom personen visste det i det den gikk inn på siden, ville den klikket seg direkte inn på designers i navbaren med en gang.  </p><br>
+            <h3>Forsiden</h3>
+            <p>På forsiden har vi gjort flere endringer på designet. Vi har gjort om rekkefølgen på de ulike elementene. Avsnittet "Om Portobok" står nå øverst, siden vi ville få fram hensikten med siden med en gang brukeren gikk inn på det. Bildekarusellen er fortsatt plassert midt på siden, men har fått en hvit ramme rundt seg. Det er fordi vi ville bryte opp forsiden mer, og at bildene kom bedre fram med hvit bakgrunn enn med grønn. Nederst på forsiden er designerne plassert. Tanken bak det er at etter at brukeren har sett på prosjektene i bildekarusellen er det lettere å vite hvilken designer personen vill inn på. Dersom personen visste det i det den gikk inn på siden, ville den klikket seg direkte inn på designers i navbaren med en gang.<br><br>
+			
+			Bildekarusellen går både av seg selv slik at den bytter mellom prosjekter hvert fjerde sekund, det er også mulig å klikke "neste" og "forrige" og å velge hvilket prosjekt man vil se på ved å klikke på de ti kvadratene under karusellen. Til hvert bilde kan man se navnet på prosjektet og hvem designeren bak er. Klikker man på bildet kommer man direkte inn på siden til det prosjektet. Derfra kan man igjen nå designeren av prosjektet ved å klikke på ikonet av designeren øverst på siden. 
+			</p>
             
-            <h3>Forandringer på designere</h3>
+            <h3>Designere</h3>
             <p>Designere ser foreløpig ut slik den var tenkt. </p><br>
             
-            <h3>Forandringer på prosjekter</h3>
+            <h3>Prosjekter</h3>
             <p>På prosjektsiden kommer det ikke opp en grønn ramme over bildene når hovret over som planlagt. Opasiteten til bilde blir heller skrudd ned, slik som på designerne, for å samsvare bedre med hverandre. </p><br>
             
-            <h3>Forandringer på kontaktskjemaet</h3>
+            <h3>Kontaktskjemaet</h3>
             <p>Mottaker er endret. Kontaktskjemaet gir en personlig tilbakemeldign etter hvilken designer du har sendt melding til. </p><br>
             
-            <h3>Forandringer på de personlige designersidene</h3>
+            <h3>De personlige designersidene</h3>
             <p>Det er kun en side framfor fem. </p><br>
             
-            <h3>Forandringer på de personlige prosjektsidene</h3>
+            <h3>De personlige prosjektsidene</h3>
             <p>Det er kun en side framfor ti. </p><br>
             
         </div>
         
         <div id="third">
             <h2>JavaScript fordeling og forandringer</h2>
+            <h3>Bildekarusellen</h3>
+            <p>Dina har laget javascriptet slideshow.js for slideshowet på hjemmesiden. Der er det sørget for modularitet ved at bildene ikke er skrevet inn én og én i html-en, men hentet ut ved bruk av en array i javascript. Det er gjort for at det skal være lettere for Bernt Måsøy å fjerne prosjekter og bytte de ut med andre, da det ikke er nødvendig å vise alle prosjekter i bildekarusellen, men heller de mest aktuelle. Vi er klare over at de aller færreste brukere av Portobok vil se gjennom hele bildekarusellen, det er mer sannsynlig at man klikker seg inn på "prosjekter" i navbaren, da får man en bedre oversikt enn man gjør i en bildekaruell. Vi valgte alikevel å ha 10 prosjekter i bildekaruellen i denne omgang, og så kan Bernt heller fjerne noen om han synes 10 er for mange. Grunnen for valget av 10 er at det er lite sannsynlig at Bernt vil ha flere, og det er lettere for han å fjerne enn å legge til da han har lite erfaring med webutvikling.</p><br>
+            
+            <h3>Opprettet designers.js og project.js</h3>
+            <p>Klienten vår, Bernt Måsøy, ønsket at det skulle være lett å utvide med flere designere og prosjekter. Derfor ligger nå designere og prosjekter i en array i  Lettere å ha designere i en array, og istedenfor å skrive mye lik html kode. Vi benyttet den samme metoden i bildekarusellen på .. </p><br>
         
         </div>
         
         <div id="fourth">
             <h2>Forandringer CSS-styling</h2>
+            <p></p>
         
         </div>
         
         <div id="seventh">
             <h2>Oppdatert plan</h2>
-            <p>Planen har endret seg underveis. Vi har ikke klart å overholde tidsfristene våre, så det er bra vi la inn slik at vi har noen dager ekstra før fristen. </p>
+            <p>Planen har endret seg underveis. Vi har ikke klart å overholde tidsfristene våre, men det hadde vi tatt høyde for. Erfaringsmessig blir det ofte jobbing helt opp til fristen, og det har det også blitt denne gangen. Vi har i tillegg endret litt på arbeidsfordelingen underveis.  </p>
             
         
             <h3>Oppdatert organisasjonsskjema</h3>
-            <p>Vi har samlet alle filene i en mappe kalt «Portobok». Der har vi valgt å samle alle html-filene i en mappe, istedenfor å ha en mappe med de personlige designersidene og en med prosjektsidene. Dette for å gjøre det enklere å linke mellom sidene. <br><br>Vi har også opprettet noen nye filer, designers.js og projects.js, for å gjøre designers.html og projects.html lettere å utvide og mer modulære. I scripts-mappa har vi slettet filen hamburger_menu.js, siden den ikke ble brukt. Koden til hamburgermenyen ble laget sammen med koden til navigasjonsbaren, og ligger dermed i navbar.js. </p>
+            <p>Vi har samlet alle filene i en mappe kalt «Portobok». Der har vi valgt å samle alle html-filene i en mappe, istedenfor å ha en mappe med de personlige designersidene og en med prosjektsidene. Dette for å gjøre det enklere å linke javaScript og bildene mellom sidene. <br><br>Vi har også opprettet noen nye filer, designers.js og projects.js, for å gjøre designers.html og projects.html lettere å utvide og for å sørge for modularitet. I scripts-mappa har vi slettet filen hamburger_menu.js, siden den ikke ble brukt. Koden til hamburgermenyen ble laget sammen med koden til navigasjonsbaren, og ligger dermed i navbar.js. </p>
 
 			<ul><!--Oversikt over filer og mapper-->
                 <li>html/
