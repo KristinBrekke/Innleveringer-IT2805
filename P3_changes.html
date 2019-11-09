@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css" type="text/css">
+<title>P3_changes</title>
+</head>
+
+<body>
+    
+    <header>
+
+		<ul class="navbar">
+			<li><a href="P1_requirements_50.html">P1</a></li>
+			<li><a href="p2.html">P2</a></li>
+			<li><a href="P3_changes.html">P3</a></li>
+			<li><a href="P4_testing_50.html">P4</a></li>
+		</ul>
+
+		<h1>P3 project coding</h1>
+		<h2>Kristin, Jenny Marie, Solveig, Dina, Oskar</h2>
+		<p>10.november 2019</p>
+
+    </header>
+    
+    <main>
+        <div id="first">
+            <h2>Administrative detaljer</h2>
+
+			<p>Klient: Bernt Måsøy, Industridesigner  <br><br>
+
+			   Direktør i PlommeDesign<br><br>
+
+			   Navn på nettside: Portobok<br><br>
+                
+                Link til vår nettside: <a href="../Portobok/html/homepage.html">www.portobok.no</a></p>
+            
+        
+        </div>
+        
+        <div id="second">
+            <h2>Forandringer</h2>
+            
+            <p>Vi har gjort flere forandringer på de ulike sidene våre. De er ramset opp under. </p> 
+            
+            <h3>Forsiden</h3>
+            <p>På forsiden har vi gjort flere endringer på designet. Vi har gjort om rekkefølgen på de ulike elementene. Avsnittet "Om Portobok" står nå øverst, siden vi ville få fram hensikten med siden med en gang brukeren gikk inn på det. Bildekarusellen er fortsatt plassert midt på siden, men har fått en hvit ramme rundt seg. Det er fordi vi ville bryte opp forsiden mer, og at bildene kom bedre fram med hvit bakgrunn enn med grønn. Nederst på forsiden er designerne plassert. Tanken bak det er at etter at brukeren har sett på prosjektene i bildekarusellen er det lettere å vite hvilken designer personen vill inn på. Dersom personen visste det i det den gikk inn på siden, ville den klikket seg direkte inn på designers i navbaren med en gang.<br><br>
+			
+			Bildekarusellen går både av seg selv slik at den bytter mellom prosjekter hvert fjerde sekund, det er også mulig å klikke "neste" og "forrige" og å velge hvilket prosjekt man vil se på ved å klikke på de ti kvadratene under karusellen. Til hvert bilde kan man se navnet på prosjektet og hvem designeren bak er. Klikker man på bildet kommer man direkte inn på siden til det prosjektet. Derfra kan man igjen nå designeren av prosjektet ved å klikke på ikonet av designeren øverst på siden. 
+			</p>
+            
+            <h3>Designere</h3>
+            <p>Designere ser ut slik den var tenkt i fullformat. Eneste forandringen fra mockupen er at iconene har en tykkere linje. Nå vinduet gjøres mindre legger bildene seg under hverandre i en kolonne, og midtstilles på siden. Siden det ikke går an å hovre på touch-skjermer som mobil og pad, legger navnene på designeren seg under bildet. Designere og prosjekter har ganske likt oppsett, så en del av css-en er lik for disse sidene. </p>
+            
+            <h3>Prosjekter</h3>
+            <p>På prosjektsiden er forandringen fra mockupen at det ikke kommer opp en grønn ramme over bildene når hovret over. Teksten er også svart istedenfor lysegrønn, og opasiteten på bildet skrus ned for å få teksten tydligere fram. Det er også for å sørge for sammenheng  med designersiden og være mer konsekvent i designet vårt. Prosjektene reagerer på samme måte, som designere, når vinduet minskes. Bortsett fra at teksten ikke dukker opp under bildet. Dette er fordi teksten på prosjektbildene ikke var like viktige som navnene på designerne.</p>
+            
+            <h3>Kontaktskjemaet</h3>
+            <p>Mottaker er endret. Kontaktskjemaet gir en personlig tilbakemeldign etter hvilken designer du har sendt melding til. </p>
+            
+            <h3>De personlige designersidene</h3>
+            <p> Oppsettet av de forskjellige designersidene er likt for alle designerene og er like det vi i utgansgpunktet så for oss. En endring er at når du hoverer over produktene vil de ikke bli gjort grønne, men opasity vil forandre seg. Dette viser like tydelig at du kan trykke på bildet og på en ryddigere måte enn om bildet hadde blitt grønt og derfor ble endringen gjort. </p>
+            
+            <h3>De personlige prosjektsidene</h3>
+            <p>Sidene til de forskjellige prosjektene er beholt slik det i utgangspunktet var tenkt. Vi har endret størrelsen på bildet fra å bruke pixel til viewportwidth (vw) slik at bildene automatisk blir responsive. </p>
+            
+        </div>
+        
+        <div id="third">
+            <h2>JavaScript fordeling og forandringer</h2>
+            <h3>navbar.js</h3>
+            <p>Solveig har brukt javaScript til å lage navigasjonsbaren med hamburgermeny.</p>
+            
+            <h3>slideshow.js</h3>
+            <p>Dina har laget javascriptet slideshow.js for slideshowet på hjemmesiden. Der er det sørget for modularitet ved at bildene ikke er skrevet inn én og én i html-en, men hentet ut ved bruk av en array i javascript. Det er gjort for at det skal være lettere for Bernt Måsøy å fjerne prosjekter og bytte de ut med andre, da det ikke er nødvendig å vise alle prosjekter i bildekarusellen, men heller de mest aktuelle. Vi er klare over at de aller færreste brukere av Portobok vil se gjennom hele bildekarusellen, det er mer sannsynlig at man klikker seg inn på "prosjekter" i navbaren, da får man en bedre oversikt enn man gjør i en bildekaruell. Vi valgte alikevel å ha 10 prosjekter i bildekaruellen i denne omgang, og så kan Bernt heller fjerne noen om han synes 10 er for mange. Grunnen for valget av 10 er at det er lite sannsynlig at Bernt vil ha flere, og det er lettere for han å fjerne enn å legge til da han har lite erfaring med webutvikling.</p>
+            
+            <h3>designers.js og project.js</h3>
+            <p>Klienten vår, Bernt Måsøy, ønsket at det skulle være lett å utvide med flere designere og prosjekter. Derfor opprettet Kristin javaScript-filene, designers.js og projects.js, for å gjøre designers.html og projects.html mer modulære. Kristin la inn designerne og prosjektene i hver sin array i hvert sitt javaScript-document, slik at Bernt enkelt kan utvide de senere. Da slipper han å kopiere mye html-kode for hver gang han skal legge til en ny designer eller et nytt prosjekt. Metoden er den sammen som Dina brukte i slideshow.js for å legge til nye prosjekter i bildekarusellen. </p>
+            
+            <h3>contact.js</h3>
+            <p>Oskar har laget contact.js. </p>
+            
+            <h3>footer.js</h3>
+            <p>Jenny Marie har laget footer.js, for å implementere den lett på hver enkelt html-side.</p>
+        
+        </div>
+        
+        <div id="fourth">
+            <h2>Forandringer CSS-styling</h2>
+            <p>I P2 project design oppga vi mange størrelser på bilder og ikoner, som vi senere fant ut at ikke tok seg godt ut og gjorde nettsiden lite responsiv. Derfor har vi endret på bildestørrelsene og de har vw størrelse for å være responsive. <br><br>
+            Font-størrelsen er endret til henholdsvis 40px og 20px fra opprinnelige 40pt og 20pt</p>
+        
+        </div>
+        
+        <div id="seventh">
+            <h2>Oppdatert plan</h2>
+            <p>Planen har endret seg underveis. Vi har ikke klart å overholde tidsfristene våre, men det hadde vi tatt høyde for. Erfaringsmessig blir det ofte jobbing helt opp til fristen, og det har det også blitt denne gangen. Vi har i tillegg endret litt på arbeidsfordelingen underveis.  </p>
+            
+        
+            <h3>Oppdatert organisasjonsskjema</h3>
+            <p>Vi har samlet alle filene i en mappe kalt «Portobok». Der har vi valgt å samle alle html-filene i en mappe, istedenfor å ha en mappe med de personlige designersidene og en med prosjektsidene. Dette for å gjøre det enklere å linke javaScript og bildene mellom sidene. <br><br>Vi har også opprettet noen nye filer, designers.js og projects.js, for å gjøre designers.html og projects.html lettere å utvide og for å sørge for modularitet. I scripts-mappa har vi slettet filen hamburger_menu.js, siden den ikke ble brukt. Koden til hamburgermenyen ble laget sammen med koden til navigasjonsbaren, og ligger dermed i navbar.js. </p>
+
+			<ul><!--Oversikt over filer og mapper-->
+                <li>html/
+                    <ul>
+                        <li>homepage.html</li>
+                        <li>designers.html</li>
+                        <li>projects.html</li>
+                        <li>contact.html</li>
+                        <li>dina.html</li>
+						<li>jenny_marie.html</li>
+						<li>kristin.html</li>
+						<li>oskar.html</li>
+						<li>solveig.html</li>
+                        <li>project_dina1.html</li>
+						<li>project_dina2.html</li>
+						<li>project_jennymarie1.html</li>
+						<li>project_jennymarie2.html</li>
+						<li>project_kristin1.html</li>
+						<li>project_kristin2.html</li>
+						<li>project_oskar1.html</li>
+						<li>project_oskar2.html</li>
+						<li>project_solveig1.html</li>
+						<li>project_solveig2.html</li>
+                    </ul>
+                
+                </li>
+
+				<li>images/
+
+					<ul>
+						<li>header_logo.png</li>
+						<li>background_header.jpg</li>
+						<li>logo_pb.png</li>
+						<li>icon_dina-png</li>
+						<li>icon_jenny_marie.png</li>
+						<li>icon_kristin.png</li>
+						<li>icon_oskar.png</li>
+						<li>icon_solveig.png</li>
+                        <li>dina.jpeg</li>
+                        <li>jenny_marie.jpg</li>
+                        <li>kristin.jpg</li>
+                        <li>oskar.jpg</li>
+                        <li>solveig.jpg</li>
+						<li>design1.jpg</li>
+						<li>...</li>
+						<li>design10.jpg</li>
+						<li>design1_landscape.jpg</li>
+						<li>...</li>
+						<li>design10_landscape.jpg</li>
+					</ul>
+
+				</li>
+
+				<li>scripts/
+
+					<ul>
+						<li>navbar.js</li>
+						<li>slideshow.js</li>
+						<li>contactscheme.js</li>
+						<li>footer.js</li>
+                        <li>designers.js</li>
+                        <li>projects.js</li>
+					</ul>
+                    
+				</li>
+
+				<li>style.css</li>
+
+				</ul>
+        
+            <h3>Endelig arbeidsfordeling</h3>
+            <table><!--Tabell med oversikt over hvem som skal gjøre hva og når det skal være ferdig-->
+
+
+				<tr>
+					<th>Filnavn</th>
+					<th>Beskrivelse</th>
+					<th>Ansvarlig</th>
+				</tr>
+
+				<tr>
+					<th>homepage.html</th>
+					<th>Forsiden til nettsiden</th>
+					<th>Solveig og Dina</th>
+				</tr>
+
+				<tr>
+					<th>designers.html</th>
+					<th>Oversikt over designere</th>
+					<th>Kristin</th>
+				</tr>
+
+				<tr>
+					<th>projects.html</th>
+					<th>Oversikt over prosjekter</th>
+					<th>Kristin</th>
+				</tr>
+
+				<tr>
+					<th>Personlige designsider<br>dina.html, kristin.html ++</th>
+					<th>Personlige designsider for hver enkelt designer med informasjon om designeren og prosjektene dens.</th>
+					<th>Jenny Marie</th>
+				</tr>
+
+				<tr>
+					<th>Prosjektsider <br>project1_dina.html, project2_dina.html ++</th>
+					<th>Prosjektsider for hvert enkelt prosjekt. </th>
+					<th>Jenny Marie</th>
+				</tr>
+
+				<tr>
+					<th>contact.html</th>
+					<th>Kontaktsiden hvor kontaktskjema fylles ut</th>
+					<th>Oskar</th>
+				</tr>
+
+				<tr>
+					<th>header_logo.png</th>
+					<th>Portobok i stor skrift på forsiden</th>
+					<th>Solveig</th>
+				</tr>
+
+				<tr>
+					<th>navbar.js</th>
+					<th>Navigasjonsbar øverst på sidene</th>
+					<th>Solveig</th>
+				</tr>
+                
+                <tr>
+					<th>hamburger_menu.js</th>
+					<th>Hamburgermeny som dukker opp når nettsiden skaleres mindre</th>
+					<th>Solveig</th>
+				</tr>
+
+				<tr>
+					<th>footer.js</th>
+					<th>Footer med kontaktinfo til Portobok nederst på sidene</th>
+					<th>Kristin</th>
+				</tr>
+
+				<tr>
+					<th>slideshow.js</th>
+					<th>Bildekarusell til forsiden med utvalgte prosjekter</th>
+					<th>Dina</th>
+				</tr>
+
+				<tr>
+					<th>contact_scheme.js</th>
+					<th>Kontaktskjema som fylles ut på kontaktsiden</th>
+					<th>Oskar</th>
+				</tr>
+                
+                <tr>
+					<th>projects.js</th>
+					<th>JevaScript-fil tilhørende projects.html</th>
+					<th>Kristin</th>
+				</tr>
+                
+                <tr>
+					<th>designers.js</th>
+					<th>JavaScript-fil tilhørende designers.html</th>
+					<th>Kristin</th>
+				</tr>
+                
+				<tr>
+					<th>style.css</th>
+					<th>CSS-filen inneholder all stylingen for alle sidene</th>
+					<th>Alle</th>
+				</tr>
+                <tr>
+					<th>Brukertesting</th>
+					<th>Brukerteste siden med sus-skjemaer</th>
+					<th>Jenny Marie</th>
+				</tr>
+                
+                <tr>
+					<th>Skrive P3</th>
+					<th>Skrive om forandringene gjort fra P2</th>
+					<th>Alle</th>
+				</tr>
+                
+                <tr>
+					<th>Skrive P4</th>
+					<th>Skrive om resultatene fra brukertestene</th>
+					<th>Alle</th>
+				</tr>
+                
+				<tr>
+					<th>Final controls</th>
+					<th>Dobbeltsjekker alle filene for å sikre at det ikke er noen error</th>
+					<th>Alle</th>
+				</tr>
+
+
+			</table>
+            
+        </div>
+    
+    </main>
+</body>
+</html>
