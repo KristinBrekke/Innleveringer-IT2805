@@ -73,14 +73,14 @@
             <h3>navbar.js</h3>
             <p>Solveig har brukt javaScript til å lage navigasjonsbaren med hamburgermeny. Navigasjonsbaren er laget likt som planen, med tre linker og en logo i toppen. Vi fant ut at det var best å implementere navigasjonsbaren på alle html-sidene ved å legge til html-koden i navbar.js, for så å bruke innerHTML til å legge den i body-elementet. Denne skal egentlig ligge i headeren, men vi flyttet den ut i bodyelementet, slik at position: sticky skulle fungere på hele bodyen. Vi har også brukt javaScript til å legge  en understrek under den siden du er i på navigasjonsbaren for å tydeliggjøre dette. Tanken var å gjøre dette med CSS, men vi fant fort ut ved å kode siden at dette ville fungere best med javaScript. Denne koden heter function firkant(). Når du hovrer over denne streken vil den bli grønn. <br><br>
 			
-			Vi ønsket å lage en hamburgermeny når koden blir mindre slik at nettsiden vår skulle være lett å bruke på både nettbrett, mobil og data. Hamburgermenyen krevde langt mer tid i javascript enn planlagt. Koden er laget helt  uten å bruke andre javascriptkoder på nettet. Dermed endte jeg opp med å bruke to funksjoner for å gjøre navbaren til en hamburgermeny. Disse funkjsonene heter function hamburger() og function resize(). 
+			Vi ønsket å lage en hamburgermeny når koden blir mindre slik at nettsiden vår skulle være lett å bruke på både nettbrett, mobil og data. Hamburgermenyen krevde langt mer tid i javaScript enn planlagt. Koden er laget helt  uten å bruke andre javaScriptkoder på nettet. Dermed endte jeg opp med å bruke to funksjoner for å gjøre navigasjonsbaren til en hamburgermeny. Disse funkjsonene heter function hamburger() og function resize(). 
 			</p>
             
             <h3>slideshow.js</h3>
             <p>Dina har laget javascriptet slideshow.js for slideshowet på hjemmesiden. Der er det sørget for modularitet ved at bildene ikke er skrevet inn én og én i html-en, men hentet ut ved bruk av en array i javascript. Det er gjort for at det skal være lettere for Bernt Måsøy å fjerne prosjekter og bytte de ut med andre, da det ikke er nødvendig å vise alle prosjekter i bildekarusellen, men heller de mest aktuelle. Vi er klare over at de aller færreste brukere av Portobok vil se gjennom hele bildekarusellen, det er mer sannsynlig at man klikker seg inn på "prosjekter" i navbaren, da får man en bedre oversikt enn man gjør i en bildekaruell. Vi valgte alikevel å ha 10 prosjekter i bildekaruellen i denne omgang, og så kan Bernt heller fjerne noen om han synes 10 er for mange. Grunnen for valget av 10 er at det er lite sannsynlig at Bernt vil ha flere, og det er lettere for han å fjerne enn å legge til da han har lite erfaring med webutvikling.</p>
             
             <h3>designers.js og project.js</h3>
-            <p>Klienten vår, Bernt Måsøy, ønsket at det skulle være lett å utvide med flere designere og prosjekter. Derfor opprettet Kristin javaScript-filene, designers.js og projects.js, for å gjøre designers.html og projects.html mer modulære. Kristin la inn designerne og prosjektene i hver sin array i hvert sitt javaScript-document, slik at Bernt enkelt kan utvide de senere. Da slipper han å kopiere mye html-kode for hver gang han skal legge til en ny designer eller et nytt prosjekt. Metoden er den sammen som Dina brukte i slideshow.js for å legge til nye prosjekter i bildekarusellen. </p>
+            <p>Klienten vår, Bernt Måsøy, ønsket at det skulle være lett å utvide med flere designere og prosjekter. Derfor opprettet Kristin javaScript-filene, designers.js og projects.js, for å gjøre designers.html og projects.html mer modulære. Kristin la inn designerne og prosjektene i hver sin array i hvert sitt javaScript-document, slik at Bernt enkelt kan utvide de senere. javaScripten tar elementene fra arrayen og lager en streng, slik html-koden ville vært, som senere legges till i html-filen med innerHTML. Da slipper han å kopiere mye html-kode for hver gang han skal legge til en ny designer eller et nytt prosjekt. Metoden er den sammen som Dina brukte i slideshow.js for å legge til nye prosjekter i bildekarusellen. </p>
             
             <h3>contact.js</h3>
             <p>Oskar har laget contact.js. </p>
@@ -241,7 +241,7 @@
 				<tr>
 					<th>footer.js</th>
 					<th>Footer med kontaktinfo til Portobok nederst på sidene</th>
-					<th>Kristin</th>
+					<th>Jenny Marie</th>
 				</tr>
 
 				<tr>
@@ -276,18 +276,18 @@
                 <tr>
 					<th>Brukertesting</th>
 					<th>Brukerteste siden med sus-skjemaer</th>
-					<th>Jenny Marie</th>
+					<th>Jenny Marie og Dina</th>
 				</tr>
                 
                 <tr>
 					<th>Skrive P3</th>
-					<th>Skrive om forandringene gjort fra P2</th>
+					<th>Skrive om forandringene gjort fra P2 og koding i javaScript</th>
 					<th>Alle</th>
 				</tr>
                 
                 <tr>
 					<th>Skrive P4</th>
-					<th>Skrive om resultatene fra brukertestene</th>
+					<th>Skrive om resultatene fra brukertestene og evaluere eget arbeid</th>
 					<th>Alle</th>
 				</tr>
                 
