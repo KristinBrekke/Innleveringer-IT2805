@@ -48,7 +48,7 @@
 			
 			Bildekarusellen går både av seg selv slik at den bytter mellom prosjekter hvert fjerde sekund, det er også mulig å klikke "neste" og "forrige" og å velge hvilket prosjekt man vil se på ved å klikke på de ti kvadratene under karusellen. Til hvert bilde kan man se navnet på prosjektet og hvem designeren bak er. Klikker man på bildet kommer man direkte inn på siden til det prosjektet. Derfra kan man igjen nå designeren av prosjektet ved å klikke på ikonet av designeren øverst på siden. <br><br>
 				
-			Ikonene som nå ligger nederst på siden er beholdt fra P2. Men de har fått en skygge når en hover over de slik at brukeren skal føle at dette er noe man kan klikke på. Når man klikker på ikonene vil de  hoppe en pixel opp slik at brukeren får en positiv respons. Vi vurderte å gjøre ikonene modulære med javascript slik som vi har gjort med bildekarusellen og på de andre sidene som projects.html og designers.html. Men vi konkluderte med at dette ikke var nødvendig for disse ikonene fordi det kun var 5 og vi følte at vi hadde vist det godt nok med de andre kodene.
+			Ikonene som nå ligger nederst på siden er beholdt fra P2. Men de har fått en skygge når en hover over de slik at brukeren skal føle at dette er noe man kan klikke på. Når man klikker på ikonene vil de  hoppe en pixel opp slik at brukeren får en positiv respons. Vi vurderte å gjøre ikonene modulære med javascript slik som vi har gjort med bildekarusellen og på de andre sidene som projects.html og designers.html. Men vi konkluderte med at dette ikke var nødvendig for disse ikonene fordi det kun var 5 og vi følte at vi hadde vist det godt nok med de andre kodene. Når forsiden blir gjort mindre legger ikonene seg under hverandre, og bildekarusellen og teksten minskes. 
 			</p>
             
             <h3>Designere</h3>
@@ -58,13 +58,13 @@
             <p>På prosjektsiden er forandringen fra mockupen at det ikke kommer opp en grønn ramme over bildene når hovret over. Teksten er også svart istedenfor lysegrønn, og opasiteten på bildet skrus ned for å få teksten skal komme tydligere fram. Det er også for å sørge for en sammenheng med designersiden og for å være mer konsekvent i designet vårt. Prosjektene reagerer på samme måte, som designere, når vinduet minskes. Bortsett fra at teksten ikke dukker opp under bildet. Dette er fordi teksten på prosjektbildene ikke var like viktig som navnene på designerne.</p>
             
             <h3>Kontaktskjemaet</h3>
-            <p>Mottaker er endret. Kontaktskjemaet gir en personlig tilbakemeldign etter hvilken designer du har sendt melding til. </p>
+            <p>Mottakerfeltet er endret. Kontaktskjemaet gir en personlig tilbakemelding ettersom hvilken designer du har sendt melding til. Ellers ser det likt ut som planlagt i P2.  </p>
             
             <h3>De personlige designersidene</h3>
-            <p> Oppsettet av de forskjellige designersidene er likt for alle designerene og er like det vi i utgansgpunktet så for oss. En endring er at når du hoverer over produktene vil de ikke bli gjort grønne, men opasiteten vil forandre seg. Endringen viser like tydelig at du kan trykke på bildet og framstår på en ryddigere måte enn om bildet hadde blitt grønt.</p>
+            <p> Oppsettet av de forskjellige designersidene er likt for alle designerene og er like det vi i utgansgpunktet så for oss. En endring er at når du hoverer over produktene vil de ikke bli gjort grønne, men opasiteten vil forandre seg. Endringen viser like tydelig at du kan trykke på bildet og framstår på en ryddigere måte enn om bildet hadde blitt grønt.Når siden gjøres mindre, vil teksten om designeren legge seg under bildet istedet for å være på høyre side. Det er for at den skal være lettere å lese, og at bildet ikke trenger å bli så veldig lite. </p>
             
             <h3>De personlige prosjektsidene</h3>
-            <p>Sidene til de forskjellige prosjektene er beholt slik det i utgangspunktet var tenkt. Vi har endret størrelsen på bildene fra å bruke pixel til viewportwidth (vw) slik at bildene automatisk blir responsive. </p>
+            <p>Sidene til de forskjellige prosjektene er beholt slik det i utgangspunktet var tenkt. Vi har endret størrelsen på bildene fra å bruke pixel til viewportwidth (vw) slik at bildene automatisk blir responsive. Siden ser lik ut når vinduet blir gjort mindre. </p>
             
         </div>
         
@@ -86,14 +86,15 @@
             <p>Oskar har laget contactscheme.js. <br> Scriptet sjekker at alle felter er fyllt inn i tråd med kriteriene det setter (validerer) og viser brukeren en personlig melding fra designeren han/hun sender til som bekreftelse på at mailen er sendt. I den personlige meldingen legger også scriptet til designerens eget ikon. <br>Navnene på designerne ligger i option-tags i HTML-filen isteden for i en array i Javascript som genererer disse. Det kunne enkelt ha vært gjort med en array i scriptet og så generert option-tagene i en for-løkke, men det ble valgt å ikke gjøre dette fordi denne typen javascript har blitt vist i andre deler av oppgaven. Dersom det skulle vært gjort modulært hadde navnene vært lagret i en ekstern fil eller database og hentet inn i scriptet derfra, for så å plassere dem i option-tags og sette dem inn i HTML. Det ble derfor ikke ansett som mer korrekt å generere dem i Javascript.</p>
             
             <h3>footer.js</h3>
-            <p>Jenny Marie har laget footer.js, for å implementere den lett på hver enkelt html-side.</p>
+            <p>Jenny Marie har laget footer.js, for å implementere den lett på hver enkelt html-side. Footer.js henter ut footer-placeholder, som er lagt som en div på hver eneste html-side, og fyller den med html-kode for footeren.</p>
         
         </div>
         
         <div id="fourth">
             <h2>Forandringer CSS-styling</h2>
             <p>I P2 project design oppga vi mange størrelser på bilder og ikoner, som vi senere fant ut at ikke tok seg godt ut og gjorde nettsiden lite responsiv. Derfor har vi endret på bildestørrelsene og de har vw størrelse for å være responsive. <br><br>
-            Font-størrelsen er endret til henholdsvis 40px og 20px fra opprinnelige 40pt og 20pt <br> Footeren er endret for å få en større rolle på siden og å presentere informasjonen på en mer oversiktlig måte. Den er nå enklere å forstå. </p>
+            Font-størrelsen er endret til henholdsvis 40px og 20px fra opprinnelige 40pt og 20pt <br> Footeren er endret for å få en større rolle på siden og å presentere informasjonen på en mer oversiktlig måte. Den er nå enklere å forstå. <br><br>
+            Vi har brukt media queries når siden er mindre enn 940 px. </p>
         
         </div>
         
